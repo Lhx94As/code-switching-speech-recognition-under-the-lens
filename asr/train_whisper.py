@@ -31,8 +31,8 @@ normalizer = EnglishTextNormalizer()
 
 def main():
       parser = argparse.ArgumentParser(description='paras for making data')
-      parser.add_argument('--train', type=str, default='/home3/hexin/espnet/egs2/asru/asr1/data/train/')
-      parser.add_argument('--dev', type=str, default='/home3/hexin/espnet/egs2/asru/asr1/data/dev/')
+      parser.add_argument('--train', type=str, default='train_data_loader')
+      parser.add_argument('--dev', type=str, default='dev_data_loader')
       parser.add_argument('--dataset', type=str, default='asru')
       parser.add_argument('--model', type=str, default="openai/whisper-small")
       parser.add_argument('--epochs', type=int, default=5)
