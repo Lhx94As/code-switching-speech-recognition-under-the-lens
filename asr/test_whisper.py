@@ -88,7 +88,7 @@ def preprocess_files(folder):
 
 def main():
     parser = argparse.ArgumentParser(description='paras for making data')
-    parser.add_argument('--test', type=str, default='/home3/hexin/espnet/egs2/asru/asr1/data/test/')
+    parser.add_argument('--test', type=str, default='test_data_folder')
     parser.add_argument('--dataset', type=str, default='asru')
     parser.add_argument('--model', type=str, default="openai/whisper-small")
     parser.add_argument('--zeroshot', type=bool, default=False)
